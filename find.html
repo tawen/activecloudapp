@@ -33,6 +33,7 @@
 			</div>
 		</div>
 		<script src="js/mui.js"></script>
+		<script src="js/zepto.js"></script>
 		<script>
 			mui.init({
 				pullRefresh: {
@@ -112,8 +113,13 @@
 			}
 			
 			//点击切换展示方式
-			mui("body").on('tap',".hb-change-view",function(e){
-				//mui(".mui-scroll").attr("id","asdf")
+			$(".hb-change-view").on("tap",function(e){
+				alert(1)
+				if($(".hb-block-ul").attr("id")==""){					
+					$(".hb-block-ul").attr("id","btnchangeview");
+				}else{
+					$(".hb-block-ul").attr("id","")
+				}
 			});
 		</script>
 

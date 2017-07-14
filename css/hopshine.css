@@ -90,5 +90,19 @@ margin-top: 1px;  font-weight: normal;
 #hb-find-header .header-search img{ position: absolute; right: 10px; top: 17px;}
 
 #pullrefresh .mui-table-view-chevron .mui-table-view-cell {
-    padding-right: 0px;
+    padding-right: 10px;
+}
+
+#btnchangeview li{ width: 50%; float: left; border: none;}
+#btnchangeview .hb-block-li-left {
+    float: none;
+    width: 100%;
+}
+#btnchangeview .hb-block-li-right {
+    float: none;
+    width: 100%;
+}
+#btnchangeview .hb-block-li-right .hb-block-li-right-inner{ padding:10px 0;}
+#btnchangeview .hb-block-li-right-inner .hb-block-btn {
+    bottom: 10px;
 }

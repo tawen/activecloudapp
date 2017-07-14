@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
-		<script src="js/mui.min.js"></script>
+		<script src="js/mui.js"></script>
 		<link href="css/mui.css" rel="stylesheet" />
 		<link href="css/hopshine.css" rel="stylesheet" />
 
@@ -15,6 +15,7 @@
 		<header id="header" class="mui-bar mui-bar-nav">
 			<div class="header-search"><input type="text" value="活动云"></div>
 		</header>
+		<div class="mui-content">
 		<div class="header-banner">
 			<div class="header-banner-clouder">
 				<img src="img/banner-clouder.png" alt="">
@@ -122,16 +123,19 @@
 				</ul>
 			</div>
 		</div>
-
+		</div>
 		<script type="text/javascript" charset="utf-8">
 			mui.init({
 				swipeBack: true //启用右滑关闭功能
 			});
 			//获得slider插件对象
 			var gallery = mui('.mui-slider');
-			gallery.slider({
-				interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
-			});
+			if(gallery){
+				gallery.slider({
+					interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+				});	
+			}
+			
 
 			
 		</script>

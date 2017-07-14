@@ -7994,7 +7994,9 @@ Function.prototype.bind = Function.prototype.bind || function(to) {
 
         this._style = this.element.style;
         this._bgColor = this._style.backgroundColor;
+        //alert(this._bgColor)
         var color = getColor(mui.getStyles(this.element, 'backgroundColor'));
+        //alert(color)
         if (color.length) {
             this._R = color[0];
             this._G = color[1];
